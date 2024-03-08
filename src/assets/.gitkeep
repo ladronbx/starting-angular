@@ -1,0 +1,4 @@
+El archivo .gitkeep se utiliza para mantener un directorio vacío 
+en un repositorio de Git y es útil cuando deseas mantener 
+la estructura de directorios de tu proyecto pero no tienes archivos
+ específicos para agregar en un directorio determinado.

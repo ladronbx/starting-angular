@@ -12,3 +12,33 @@
     "src/**/*.d.ts"
   ]
 }
+
+
+// El archivo `tsconfig.app.json` es un archivo de configuración de TypeScript específico 
+// para la compilación de la aplicación en un proyecto de Angular.
+
+// A continuación, se explica el contenido y el propósito de las principales partes de este 
+// archivo de configuración:
+
+// - `"extends": "./tsconfig.json"`: Similar al archivo `tsconfig.spec.json`, esta línea indica
+//  que este archivo de configuración hereda las opciones de configuración del archivo `tsconfig.json` 
+//  en el directorio raíz del proyecto. Esto permite compartir configuraciones comunes entre los 
+//  archivos de configuración.
+
+// - `"compilerOptions": {...}`: En esta sección, se definen las opciones del compilador de TypeScript
+//  para la compilación de la aplicación Angular. En este caso, se establece `"outDir"` como `"./out-tsc/app"`,
+//   lo que significa que los archivos transpilados de la aplicación se colocarán en el directorio 
+//   `./out-tsc/app` en lugar del directorio predeterminado de salida. Además, la opción `"types"` 
+//   está vacía, lo que significa que no se incluyen tipos adicionales en la compilación.
+
+// - `"files": [...]`: Aquí se especifica qué archivos deben ser incluidos en la compilación. 
+// En este caso, solo se incluye el archivo `src/main.ts`, que es el punto de entrada principal 
+// de la aplicación Angular.
+
+// - `"include": [...]`: Esta sección especifica qué archivos adicionales deben ser incluidos en 
+// la compilación. En este caso, se incluyen todos los archivos 
+// con extensión `.d.ts` (archivos de definición de tipos) dentro del directorio `src`.
+
+// En resumen, el archivo `tsconfig.app.json` proporciona la configuración necesaria 
+// para compilar la aplicación Angular. Esta configuración asegura que los archivos
+// TypeScript se compilen correctamente y que la aplicación pueda ser ejecutada sin problemas.

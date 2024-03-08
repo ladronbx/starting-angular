@@ -12,3 +12,26 @@
     "src/**/*.d.ts"
   ]
 }
+// El archivo `tsconfig.spec.json` es un archivo de configuración de TypeScript específico para las pruebas 
+// unitarias en un proyecto de Angular.
+
+// Aquí hay una explicación de las principales partes de este archivo de configuración:
+
+// - `"extends": "./tsconfig.json"`: Esta línea indica que este archivo de configuración hereda las opciones
+//  de configuración del archivo `tsconfig.json` en el directorio raíz del proyecto. Esto permite compartir 
+//  configuraciones comunes entre los archivos de configuración.
+
+// - `"compilerOptions": {...}`: En esta sección, se definen las opciones del compilador de TypeScript para 
+// las pruebas unitarias. En este caso, se establece `"outDir"` como `"./out-tsc/spec"`, lo que significa que 
+// los archivos transpilados de las pruebas unitarias se colocarán en el directorio `./out-tsc/spec` en lugar
+//  del directorio predeterminado de salida. Además, se especifica el tipo de `"jasmine"`, lo que permite
+//  el uso de las funciones de Jasmine para escribir y ejecutar pruebas.
+
+// - `"include": [...]`: Aquí se especifica qué archivos deben ser incluidos en la compilación cuando 
+// se ejecuten las pruebas unitarias. En este caso, se incluyen todos los archivos 
+// con extensión `.spec.ts` (archivos de prueba) y `.d.ts` (archivos de definición de tipos) dentro del directorio `src`.
+
+// En resumen, el archivo `tsconfig.spec.json` proporciona la configuración necesaria para compilar 
+// las pruebas unitarias escritas en TypeScript utilizando Jasmine como marco de pruebas en un proyecto 
+// de Angular. Esta configuración asegura que las pruebas unitarias se compilen correctamente y que puedan 
+// ser ejecutadas sin problemas.
